@@ -74,3 +74,6 @@ document.getElementById('prev-page').addEventListener(
     'click',showPrevPage);
 document.getElementById('next-page').addEventListener(
     'click', showNextPage);
+
+
+

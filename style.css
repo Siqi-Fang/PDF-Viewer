@@ -1,0 +1,48 @@
+.top-bar{
+    display: inline-block;
+    background-color: #3b3a30;
+    margin-bottom: 1em;
+    height:80px;
+    width:100%;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    white-space:nowrap;
+}
+.container{
+    position:relative;
+    top:20px;
+    margin-left:1em; 
+    display: block;
+}
+.btn{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color:#618685;
+    height: 40px;
+    width: 130px;
+    border-radius: 10px;
+    border:none;
+    color:white;
+   
+}
+.btn:hover{
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+.btn:focus{
+    outline:none;
+    transform: none;
+}
+.page-info{
+    margin-left:1em;
+}
+canvas{
+    margin:0 auto;
+    display:block;
+}
+
+#page-num{
+    font-size: x-large;
+    font-weight: bold;
+}
