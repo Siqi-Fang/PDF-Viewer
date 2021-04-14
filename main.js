@@ -77,6 +77,7 @@ const showNextPage = () => {
 }
 
 //Fetch Doc
+pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
 pdfjsLib.getDocument(url).promise.then(pdfDoc_=>{
     pdfDoc = pdfDoc_;
     document.querySelector('#page-count').textContent = pdfDoc.numPages;
