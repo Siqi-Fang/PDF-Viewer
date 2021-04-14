@@ -46,3 +46,30 @@ canvas{
     font-size: x-large;
     font-weight: bold;
 }
+
+#alert{
+    visibility: hidden;
+    position:absolute;
+    float:left;
+    display: block;
+    top:90px;
+    height:30px;
+    margin:0 auto;
+
+    border-color:black;
+    border-style: solid;
+    border-width: thin;
+    background-color: rgba(215, 246, 247, 0.705);
+
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:small;
+    padding: 5px 10px 5px 10px;
+}
+
+#alert-message{
+     white-space:normal;
+     width:inherit;
+     display:block;
+     padding-top: 5px;
+}

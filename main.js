@@ -44,20 +44,34 @@ const queueRenderPage = num => {
     }else{
     renderPage(num);}//render now?
 }
-
-//Prev Page  Update: Add alert
-const showPrevPage = () => {
+//Show alert when exceeding page limit
+const showAlert = (msg) => {
+    let alert_msg = document.querySelector('#alert');
+    document.querySelector('#alert-message').textContent = msg;
+    alert_msg.style.visibility = 'visible';
+    setTimeout(() => {
+        alert_msg.style.visibility = 'hidden';
+    }, 1500);
+}
+//Prev Page 
+const showPrevPage = () => {  
     if(pageNum <= 1){
+        showAlert("You have reached the first page!")        
         return;
     }
+    //UPDATE: are there neater ways to make alert message invisible
+    document.querySelector('#alert').style.visibility = 'hidden';
     pageNum--;
     queueRenderPage(pageNum);
 }
+
 //Next Page
 const showNextPage = () => {
     if (pageNum >= pdfDoc.numPages) {
+        showAlert("You have reached the last page!")
         return;
     }
+    document.querySelector('#alert').style.visibility = 'hidden';
     pageNum++;
     queueRenderPage(pageNum);
 }
